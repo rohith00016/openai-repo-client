@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #28a745;
+}
+
+.error {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: red;
+}
+
+/* New CSS for the response section */
+.response {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.response h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.response p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.response h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.response ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.response li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+.dropdown {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Styles for custom test cases section */
+.custom-test-case-input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px; /* Less space between input and button */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.add-test-case-button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff; /* Blue color for add button */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px; /* Space below the button */
+}
+
+.add-test-case-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the list of added test cases */
+.test-case-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.test-case-list li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.remove-test-case-button {
+  background-color: #dc3545; /* Red color for remove button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-test-case-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
