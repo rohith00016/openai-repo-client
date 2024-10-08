@@ -43,6 +43,15 @@ function App() {
     }
   };
 
+  const sampleRepos = {
+    html: "https://github.com/rohith-guvi/memory-game.git",
+    react: "https://github.com/rohith00016/Add2Cart.git",
+    capstone: [
+      "https://github.com/sriram-R-krishnan/shoestop-backend",
+      "https://github.com/sriram-R-krishnan/shoestop-frontend",
+    ],
+  };
+
   return (
     <div className="container">
       <h1 className="heading">Task Submission</h1>
@@ -76,9 +85,7 @@ function App() {
             <option value="shopping cart">shopping cart</option>
           )}
           {category === "capstone" && (
-            <>
-              <option value="ecommerce">e-commerce</option>
-            </>
+            <option value="ecommerce">e-commerce</option>
           )}
         </select>
 
@@ -116,6 +123,44 @@ function App() {
           Submit
         </button>
       </form>
+
+      <div className="sample-repos">
+        <h4>Sample Repositories:</h4>
+        {category === "capstone" ? (
+          <>
+            <p>
+              Frontend:{" "}
+              <a
+                href={sampleRepos.capstone[0]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {sampleRepos.capstone[0]}
+              </a>
+            </p>
+            <p>
+              Backend:{" "}
+              <a
+                href={sampleRepos.capstone[1]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {sampleRepos.capstone[1]}
+              </a>
+            </p>
+          </>
+        ) : (
+          <p>
+            <a
+              href={sampleRepos[category]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {sampleRepos[category]}
+            </a>
+          </p>
+        )}
+      </div>
 
       {submitted && response && (
         <div className="response">
